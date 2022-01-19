@@ -42,3 +42,58 @@ body{
   color: var(--white);
   margin-right: 45px;
 }
+.principal{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.principal-container{
+  display: flex;
+  flex-direction: column;
+}
+.principal-saudacao{
+  max-width: 220px;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 47px;
+}
+.principal-profissao{
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 23px;
+}
+.principal-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.button-cv{
+  background-color: var(--green-light);
+}
+.button-contato{
+  background-color: transparent;
+  border: 1px solid var(--gray-200);
+  
+}
+.button-contato > a{
+  color: var(--white);
+}
+/* utilities */
+button{
+  width: 140px;
+  height: 45px;
+  border-radius: 5px;
+}
+button> a {
+  text-decoration: none;
+  color: var(--dark);
+    font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+button:hover{
+}
