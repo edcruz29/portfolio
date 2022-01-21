@@ -113,6 +113,9 @@ body {
 }
 .button-contato:hover {
   background-color: var(--cerulean);
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-style: outset;
+  border-width: 2px;
 }
 .button-cv:hover {
   background-color: transparent;
