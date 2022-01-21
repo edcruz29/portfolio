@@ -2,14 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 :root {
-  --white: #f9f9f9;
-  --gray: #828282;
-  --gray-200: #333333;
-  --gray-400: #212121;
-  --dark: #171717;
-  --green-light: #00df5e;
+  --white: #fff;
+  --black:#000;
+  --gray:#33415C;
+  --navy: #03045E;
+  --gray-200: #5C677D;
+  --gray-400: #001233;
+  --dark: #CAF0F8;
+  --cerulean: #00B4D8;
 }
 body {
   width: 100%;
@@ -18,17 +21,30 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
-  height: 100vh;
   padding-top: 2rem;
-  margin: auto;
+  margin: 0 auto;
 }
 .navbar {
   display: flex;
+  width: 100%;
+  height: 150px;
+  width: 100%;
+  background-color: var(--navy);
+  
+  
+  
+}
+.nav-container{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+
 }
 .navbar-logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--white);
 }
 .navbar-items {
@@ -36,16 +52,27 @@ body {
   justify-content: space-between;
   list-style: none;
 }
+
 .item-link {
   text-decoration: none;
   color: var(--white);
-  margin-right: 45px;
+  font-size: 1.3rem;
+  margin-right: 40px;
+  transition: all ease 0.3s;
 }
+.item-link-last{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
 .principal {
   margin-top: 100px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 100px  auto;
 }
 .principal-container {
   display: flex;
@@ -53,7 +80,7 @@ body {
 }
 .principal-saudacao {
   max-width: 220px;
-  color: var(--white);
+  color: var(--black);
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 47px;
@@ -70,26 +97,30 @@ body {
   align-items: center;
   margin-top: 10px;
 }
+.principal-img{
+  width: 400px;
+  height: 350px;
+}
 .button-cv {
-  background-color: var(--green-light);
+  background-color: var(--cerulean);
 }
 .button-contato {
   background-color: transparent;
   border: 1px solid var(--gray-200);
 }
 .button-contato > a {
-  color: var(--white);
+  color: var(--black);
 }
 .button-contato:hover {
-  background-color: #00df5d;
+  background-color: var(--cerulean);
 }
 .button-cv:hover {
   background-color: transparent;
   border: 1px solid var(--gray-200);
-  color: var(--white);
+  color: var(--black);
 }
 .button-cv > a {
-  color: var(--white);
+  color: var(--black);
 }
 .sobre {
   margin-top: 150px;
@@ -99,12 +130,13 @@ body {
   flex-direction: column;
 }
 .sobre-titulo {
-  color: var(--white);
+  color: var(--black);
   font-size: 2rem;
   font-weight: bold;
   line-height: 48px;
 }
 .sobre-descricao {
+  margin-top: 20px;
   max-width: 750px;
   font-size: 1.1rem;
   color: var(--gray);
@@ -115,6 +147,7 @@ body {
 
 .contact-container {
   margin-top: 100px;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,14 +160,14 @@ body {
   justify-content: center;
 }
 .contact i {
-  color: var(--green-light);
+  color: var(--cerulean);
   font-size: 2rem;
   background-color: var(--gray-400);
   padding: 20px 20px;
   border-radius: 50%;
 }
 .contact h3 {
-  color: var(--white);
+  color: var(--black);
 }
 .contact p {
   color: var(--gray);
@@ -144,13 +177,14 @@ body {
   color: var(--gray);
 }
 .projetos {
-  margin-top: 200px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
 }
 .projetos h2 {
-  color: var(--white);
+  color: var(--black);
   font-size: 2rem;
   font-weight: bold;
 }
@@ -177,34 +211,35 @@ body {
   line-height: 32px;
 }
 .card-container > p {
-  color: var(--gray);
+  color: var(--gray-200);
   font-size: 0.8rem;
   font-size: 400;
   line-height: 28px;
 }
 
 #servicos .card-container {
-  border-bottom: 4px solid var(--green-light);
+  border-bottom: 4px solid var(--cerulean);
   gap: 100px;
   margin-left: 30px;
 }
 #servicos .card-container > i {
   font-size: 3rem;
-  color: var(--green-light);
+  color: var(--cerulean);
 }
 #servicos .card-container > h3 {
   font-size: 2rem;
-  color: var(--gray);
+  color: var(--gray-200);
 }
 .skills {
   display: flex;
+  max-width: 1200px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 130px;
+  margin: 100px auto;
 }
 .skills h2 {
-  color: var(--white);
+  color: var(--black);
   font-size: 2rem;
   font-weight: bold;
 }
@@ -222,22 +257,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+  border-bottom: 4px solid var(--cerulean);
 }
 .skill-card i {
-  color: var(--green-light);
+  color: var(--cerulean);
   font-size: 5rem;
 }
 footer {
   margin-top: 200px;
+  width: 100%;
   padding: 30px 0;
   background-color: var(--gray-400);
+  color:var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  font-style: italic;
 }
 footer > span {
-  color: var(--green-light);
+  color: var(--cerulean);
   margin-left: 10px;
 }
 /* utilities */
@@ -257,7 +297,7 @@ button > a {
 }
 .card-container {
   width: 350px;
-  height: 240px;
+  height: 280px;
   padding: 25px;
   border-radius: 5px;
   background-color: var(--gray-400);
@@ -265,4 +305,5 @@ button > a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  border-bottom: 4px solid var(--cerulean);
 }
